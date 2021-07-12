@@ -28,19 +28,13 @@ db.on('connected', ()=> console.log('Mongo connected: ' + mongoURI))
 db.on('disconnected', ()=> console.log('Mongo Disconnected'))
 
 
-
-
-
-
-
 // use routes.
 app.use('/api/items', items)
 
 app.get('/',(req, res)=>{
     console.log('/ route')
-    res.send('This is working..')
+    res.send('http://localhost:3001/api/items + whatever +')
 })
-
 
 app.listen(PORT, (req,res)=>{
     console.log("Server running on", PORT)
