@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser= require('body-parser')
 const PORT = process.env.PORT || 3001
-//
+// routes
 const items = require('./routes/api/items')
 
 //db

@@ -1,3 +1,4 @@
+
 const express = require('express')
 const router = express.Router()
 // Item model
@@ -38,8 +39,5 @@ router.delete('/:id',(req,res)=>{
     )})
     .catch(err => res.status(404).json({msg: "could not find item"}))
 })
-
-
-
 
 module.exports = router
