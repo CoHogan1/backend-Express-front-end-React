@@ -4,12 +4,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // replaces <React.StrictMode> with what it currently has.
-// apparently this is bad practices. 
+// apparently this is bad practices.
 
 ReactDOM.render(
-  <React.Fragment>
+  <React.StrictMode>
     <App />
-  </React.Fragment>,
+  </React.StrictMode>,
   document.getElementById('root')
 );
 

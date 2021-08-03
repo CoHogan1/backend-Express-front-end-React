@@ -5,6 +5,9 @@ import React, { Component } from 'react'
 import AppNavBar from './components/AppNavBar'
 import Shoppinglist from './components/shoppingList'
 
+import { Provider } from 'react-redux'
+import store from './store'
+
 export default class App extends Component {
     constructor(props){
         super(props)
@@ -14,13 +17,16 @@ export default class App extends Component {
     }
     // left off at video 5 --3:02
     // npm i redux react-redux redux-thunk
+    // 
 
     render(){
         return(
-            <div className="App">
-              <AppNavBar />
-              <Shoppinglist />
-            </div>
+            <Provider store={store}>
+                <div className="App">
+                  <AppNavBar />
+                  <Shoppinglist />
+                </div>
+            </Provider>
         )
     }
 }
