@@ -12,9 +12,8 @@ export default class App extends Component {
             hello: true,
         }
     }
-    // here
-
-
+    // left off at video 5 --3:02
+    // npm i redux react-redux redux-thunk
 
     render(){
         return(

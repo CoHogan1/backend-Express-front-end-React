@@ -3,3 +3,27 @@
     background-size: cover;
     height: 100vh;
 }
+.remove-btn{
+    margin-right: 0.5rem;
+}
+
+
+
+/*  item effects */
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 1000ms ease-in;
+}

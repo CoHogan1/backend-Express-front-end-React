@@ -34,9 +34,7 @@ export default class ShoppingList extends Component {
                     >Add Item</Button>
 
                 <ListGroup>
-
                     <TransitionGroup className="shopping-list">
-
                         {items.map(({id, name}) => {
                             return (
                                 <CSSTransition
@@ -46,7 +44,7 @@ export default class ShoppingList extends Component {
                                             onClick={()=>{
                                                 this.setState(state => ({
                                                     items: state.items.filter(item => item.id !== id)
-                                                }))                                                
+                                                }))
                                             }}
                                             >&times;</Button>
                                         {name}
@@ -54,11 +52,8 @@ export default class ShoppingList extends Component {
                                 </CSSTransition>
                             )
                         })}
-
                     </TransitionGroup>
-
                 </ListGroup>
-
             </Container>
         )
     }
